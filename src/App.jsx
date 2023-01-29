@@ -10,23 +10,23 @@ import './App.css'
 function App() {
 
   const url = 'https://via.placeholder.com/150'
-  
+
   return (
     <div className="App">
       <h1>Oi paco</h1>
       <img src={url} alt='minha imagem'></img>
       <h1>Dois componentes:</h1>
-      <HelloWorld/>
-      <Frase/>
-      <List/>
-      
+      <HelloWorld />
+      <Frase />
+      <List />
+
       <h1>Props</h1>
-      <SayMyName nome="Er Pepe"/>
-      <SayMyName nome="João"/>
-      <Frase/>
-      
+      <SayMyName nome="Er Pepe" />
+      <SayMyName nome="João" />
+      <Frase />
+
       <h1>Props mais complexo</h1>
-      <Pessoa 
+      <Pessoa
         nome="João"
         idade="28"
         profissao="Programador"
@@ -52,4 +52,19 @@ function App() {
   )
 }
 
-export default App
+//================================================================
+import Evento from './components/Evento'
+
+function App2() {
+  return (
+    <>
+      <div className='App'>
+        <h1>Testando Eventos</h1>
+        <Evento numero="1"/>
+        <Evento numero="2"/>
+      </div>
+    </>
+  )
+}
+
+export default App2
