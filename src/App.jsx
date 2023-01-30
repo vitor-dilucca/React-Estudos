@@ -54,6 +54,7 @@ function App() {
 
 //================================================================
 import Evento from './components/Evento'
+import Form from './components/Form'
 
 function App2() {
   return (
@@ -62,6 +63,7 @@ function App2() {
         <h1>Testando Eventos</h1>
         <Evento numero="1"/>
         <Evento numero="2"/>
+        <Form nome="paco"/>
       </div>
     </>
   )
